@@ -1,5 +1,5 @@
 <?php
-    include "koneksi.php";
+    include "../host/koneksi.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <title></title>
 </head>
 <body>
@@ -24,10 +24,10 @@
             <a class="nav-link active" aria-current="page" href="index.php">Home</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link active" href="login.php">Login</a>
+            <a class="nav-link active" href="../user/login.php">Login</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link active" href="register.php">Register</a>
+            <a class="nav-link active" href="../user/register.php">Register</a>
             </li>
             <li class="nav-item dropdown">
         </ul>
