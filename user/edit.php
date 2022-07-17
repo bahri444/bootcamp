@@ -6,8 +6,6 @@
         $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
         $rolle = $_POST['rolle'];
         $update = mysqli_query($host, "UPDATE users SET username='$username', password='$password',rolle='$rolle' WHERE user_id='$user_id'");
-        // var_dump($update);
-        // die;
         if ($update) {
             echo "<script> alert('data done updated');
             window.location.href='../user/user.php'</script>";
@@ -67,24 +65,3 @@
 <?php
     include "../footer/footer.php";
 ?>
-
-<!-- $namaLengkap = $_POST['nama_lengkap'];
-$level       = $_POST['level'];
-$username    = $_POST['username'];
-$password    = md5($_POST['password']);
-$idUser = $_POST['id_user'];
-
-// lagukan query update data
-$query = mysqli_query($conn, "Update user set nama_lengkap='$namaLengkap',level='$level',
-        username='$username',password='$password' where id_user='$idUser'  ");
-
-//cek apakah query berhasil atau gagal
-if ($query) {
-    echo "<script> alert('Data Berhasil Di Ubah');
-    window.location.href='data_registrasi.php'</script>";
-} else {
-    // echo "Gagal Di simpan : " . mysqli_error($conn);
-    echo "<script> alert('Data Gagal Di Ubah');
-    window.location.href='frm_ubah_registrasi.php?id=$idUser'</script>";
-} -->
-
